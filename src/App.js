@@ -5,6 +5,7 @@ function App() {
     <div>
       <div className="h-screen"></div>
       <Project />
+      <div className="h-screen"></div>
     </div>
   );
 }
