@@ -67,7 +67,7 @@ export default function Project() {
   }, []);
 
   return (
-    <div className="p-4 " ref={projectRef}>
+    <section id="project" className="p-4 " ref={projectRef}>
       <div
         className={`text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
@@ -130,6 +130,6 @@ export default function Project() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }

@@ -1,0 +1,28 @@
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .underline-hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .underline-hover::before {
+    left: 0;
+    bottom: 0;
+  }
+
+  .underline-hover:hover::before {
+    width: 100%;
+  }
