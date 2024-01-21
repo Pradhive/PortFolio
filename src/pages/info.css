@@ -1,0 +1,9 @@
+.hero {
+  width: min(75%, 1440px);
+
+
+  & .anim {
+    font-size: clamp(3rem, (1.5rem + 2vw), 8rem);
+    line-height: 1.5;
+  }
+}

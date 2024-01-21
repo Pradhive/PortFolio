@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import "./Project.css";
-import BallGame from "./assets/BallGame.png";
-import Invoice from "./assets/InvoiceApp.png";
-import NavBar from "./assets/NavBar.png";
-import Portfolio from "./assets/Portfolio.png";
-import Wedding from "./assets/Wedding.png";
+import BallGame from ".././assets/BallGame.png";
+import Invoice from ".././assets/InvoiceApp.png";
+import NavBar from ".././assets/NavBar.png";
+import Portfolio from ".././assets/Portfolio.png";
+import Wedding from ".././assets/Wedding.png";
 
 export default function Project() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -52,7 +52,7 @@ export default function Project() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.1,
+      threshold: 0.35,
     });
 
     if (projectRef.current) {

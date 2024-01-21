@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Header from "./Header";
-import Home from "./Home";
-import Project from "./Project";
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+import Info from "./pages/Info";
 
 function App() {
   const [sec, setSec] = useState(0);
@@ -54,6 +55,7 @@ function App() {
         <div>
           <Header />
           <Home />
+          <Info />
           <Project />
         </div>
       )}
