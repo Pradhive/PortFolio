@@ -66,12 +66,9 @@ export default function Info() {
     setHoveredIndex(true);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredIndex(false);
-  };
 
   return (
-    <div className="p-4" ref={infoRef}>
+    <div className="p-4 mb-[200px]" ref={infoRef}>
       <div
         className={`text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
@@ -83,7 +80,6 @@ export default function Info() {
         <span
           className="border-b-4  cursor-pointer border-black"
           onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
         >
           Pradhive
         </span>
@@ -102,7 +98,7 @@ export default function Info() {
           {hoveredIndex && (
             <img
               src={Pradhive}
-              className="grayscale rounded-lg animate__animated animate__fadeInUp "
+              className="grayscale  rounded-lg animate__animated animate__fadeInUp "
               alt=""
             />
           )}

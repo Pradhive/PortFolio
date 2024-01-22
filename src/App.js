@@ -3,6 +3,7 @@ import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Info from "./pages/Info";
+import Footer from "./pages/Footer";
 
 function App() {
   const [sec, setSec] = useState(0);
@@ -57,6 +58,7 @@ function App() {
           <Home />
           <Info />
           <Project />
+          <Footer />
         </div>
       )}
     </div>

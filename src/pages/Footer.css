@@ -1,0 +1,48 @@
+.underline-hover1 {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .underline-hover1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .underline-hover1::before {
+    left: 0;
+    bottom: 0;
+  }
+
+  .underline-hover1:hover::before {
+    width: 100%;
+  }
+
+.underline-hover2 {
+    position: relative;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .underline-hover2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: rgb(130, 128, 128);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .underline-hover2::before {
+    left: 0;
+    bottom: 0;
+  }
+
+  .underline-hover2:hover::before {
+    width: 100%;
+  }
