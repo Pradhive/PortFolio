@@ -3,7 +3,7 @@ import "./Header.css"
 
 export default function Header() {
   return (
-    <div className='bg-black border-b h-[10vh] p-4 flex justify-between items-center sticky top-0'>
+    <div className='bg-black border-b h-[10vh] p-4 flex justify-between items-center absolute z-10 sticky top-0'>
         <div className='flex '>
             <div className='text-white text-[30px] pl-4 tracking-widest font-bold italic'>PU</div>
             <span className="p-1 mt-2 ml-1 h-fit bg-white rounded-full"></span>
