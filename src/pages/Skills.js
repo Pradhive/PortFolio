@@ -106,9 +106,9 @@ export default function Skills() {
         Skills
       </div>
       <div className="">
-        <div className="p-2 ">
-          <div className="z-2">
-            <div className="text-[20px] md:text-[30px]  p-4 text-center font-semibold">
+        <div className="p-2 border1">
+          <div className="!z-20 w-full py-4">
+            <div className="text-[20px] md:text-[30px] text-black  p-4 text-center font-semibold">
               Technologies I Know{" "}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-10">

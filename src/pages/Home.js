@@ -19,7 +19,6 @@ export default function Home() {
         scrub:  0.075,
         start: 0,
         end: window.innerHeight,
-        onUpdate: e => direction = e.direction * -1
       },
       x: "-500px",
     })

@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-black border-b w-full h-[10vh] p-4 flex justify-between items-center fixed top-0 z-10">
+    <div className="bg-black border-b w-full h-[10vh] p-4 flex justify-between items-center fixed top-0 !z-40">
       <div className="flex">
         <div
           className="text-white text-[30px] pl-4 tracking-widest font-bold italic cursor-pointer"
