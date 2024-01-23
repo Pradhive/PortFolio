@@ -67,9 +67,9 @@ export default function Project() {
   }, []);
 
   return (
-    <section id="project" className="p-4 mb-[300px]" ref={projectRef}>
+    <section id="project" className="p-4 md:mb-[300px]" ref={projectRef}>
       <div
-        className={`text-[80px] p-4 font-semibold ${
+        className={`text-[40px] md:text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
         } `}
       >
@@ -99,12 +99,12 @@ export default function Project() {
               />
             )}
           </div>
-          <div className="col-span-2 pr-10">
+          <div className="col-span-2 md:pr-10">
             <div
               className={`grid grid-cols-5 border-y-2 items-center text-gray-400 h-28`}
             >
               <div
-                className={`col-span-3 text-3xl ${
+                className={`col-span-3 text-lg md:text-3xl ${
                   hoveredIndex === index ? "translate-x-10" : ""
                 } duration-500`}
               >

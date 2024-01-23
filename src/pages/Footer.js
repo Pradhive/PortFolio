@@ -46,14 +46,14 @@ export default function Footer() {
   return (
     <section id="contact" className="bg-black pb-[10px] p-4">
       <div className="p-[20px] pt-[40px]">
-        <div className="text-[80px] text-white font-bold uppercase underline-hover1">
+        <div className="text-[40px] md:text-[80px] text-white font-bold uppercase underline-hover1">
           Wanna start a
         </div>
-        <div className="text-[80px] text-white font-bold uppercase ml-[450px] underline-hover1">
+        <div className="text-[40px] md:text-[80px] text-white font-bold uppercase lg:ml-[450px] underline-hover1">
           New project ?{" "}
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10 pt-10">
+      <div className="md:grid grid-cols-3 gap-10 pt-10">
         <div className="p-4">
         <div className="text-gray-400 text-2xl">Location</div>
           <iframe

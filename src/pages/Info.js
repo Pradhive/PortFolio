@@ -40,8 +40,8 @@ export default function Info() {
     stagger: 0.05,
     scrollTrigger: {
       trigger: ".anim",
-      start: 'top 50%',
-      end: 'bottom 50%',
+      start: "top 50%",
+      end: "bottom 50%",
       scrub: true,
     },
   });
@@ -66,17 +66,16 @@ export default function Info() {
     setHoveredIndex(true);
   };
 
-
   return (
-    <section id="info" className="p-4 mb-[200px]" ref={infoRef}>
+    <section id="info" className="p-4 md:mb-[200px]" ref={infoRef}>
       <div
-        className={`text-[80px] p-4 font-semibold ${
+        className={`text-[40px] md:text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
         } `}
       >
         Info
       </div>
-      <div className="w-4/5 p-4 font-medium text-[60px]">
+      <div className="w-4/5 p-4 font-medium text-[30px] md:text-[60px]">
         <span
           className="border-b-4  cursor-pointer border-black"
           onMouseEnter={handleMouseEnter}
@@ -84,10 +83,15 @@ export default function Info() {
           Pradhive
         </span>
       </div>
-      <div className="flex p-4">
+      <div className="md:flex p-4">
+        <img
+          src={Pradhive}
+          className="grayscale md:hidden p-4 rounded-lg animate__animated animate__fadeInUp "
+          alt=""
+        />
         <div class="hero ">
           <div class="container"></div>
-          <p class="anim">
+          <p class="anim text-[30px] md:text-[60px]">
             A dedicated developer blending creativity and code to build dynamic
             websites. Whether it's front-end magic or back-end wizardry, I
             specialize in turning concepts into responsive and user-friendly
@@ -98,7 +102,7 @@ export default function Info() {
           {hoveredIndex && (
             <img
               src={Pradhive}
-              className="grayscale  rounded-lg animate__animated animate__fadeInUp "
+              className="grayscale hidden md:block  rounded-lg animate__animated animate__fadeInUp "
               alt=""
             />
           )}

@@ -99,7 +99,7 @@ export default function Skills() {
   return (
     <section id="skill" className="p-4" ref={skillRef}>
       <div
-        className={`text-[80px] p-4 font-semibold ${
+        className={`text-[40px] md:text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
         } `}
       >
@@ -108,10 +108,10 @@ export default function Skills() {
       <div className="">
         <div className="p-2 ">
           <div className="z-2">
-            <div className="text-[30px]  p-4 text-center font-semibold">
+            <div className="text-[20px] md:text-[30px]  p-4 text-center font-semibold">
               Technologies I Know{" "}
             </div>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
               {data?.map((o, i) => (
                 <div className=" flex items-center justify-center ">
                   <div class="flip-card" key={i}>
@@ -137,10 +137,10 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="text-[30px] p-4 text-center font-semibold">
+        <div className="text-[20px] md:text-[30px] p-4 text-center font-semibold">
           Tools I'm using
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {data1?.map((o, i) => (
             <div className=" flex items-center justify-center ">
               <div class="flip-card" key={i}>
