@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Info from "./pages/Info";
 import Footer from "./pages/Footer";
+import Skills from "./pages/Skills";
 
 function App() {
   const [sec, setSec] = useState(0);
@@ -41,7 +42,7 @@ function App() {
   ];
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <div
         className={`bg-[#222222] h-screen flex justify-center items-center ${
           vis
@@ -57,6 +58,7 @@ function App() {
           <Header />
           <Home />
           <Info />
+          <Skills />
           <Project />
           <Footer />
         </div>

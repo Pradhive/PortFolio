@@ -40,14 +40,13 @@ export default function Home() {
   }
 
   return (
-    <main className="relative flex h-[100vh] overflow-hidden bg-black">
-      
+    <section id='home' className="relative flex h-[100vh] overflow-hidden bg-black">
       <div className="sliderContainer">
-        <div ref={slider} className="slider">
+        <div ref={slider} className="slider text-[40px] md:text-[230px] ">
           <p ref={firstText}>Pradhive ‧ Developer ‧ Designer  ‧ </p>
           <p ref={secondText}>Pradhive  ‧ Developer ‧ Designer  ‧ </p>
         </div>
       </div>
-    </main>
+    </section>
   )
 }

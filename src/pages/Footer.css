@@ -1,7 +1,6 @@
 .underline-hover1 {
     position: relative;
     display: inline-block;
-    letter-spacing: 0.1em;
     cursor: pointer;
   }
 

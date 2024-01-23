@@ -68,7 +68,7 @@ export default function Info() {
 
 
   return (
-    <div className="p-4 mb-[200px]" ref={infoRef}>
+    <section id="info" className="p-4 mb-[200px]" ref={infoRef}>
       <div
         className={`text-[80px] p-4 font-semibold ${
           isVisible ? "tracking-in-contract-bck-top" : ""
@@ -104,6 +104,6 @@ export default function Info() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

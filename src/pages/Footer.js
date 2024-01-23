@@ -44,13 +44,26 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-black pb-[10px] p-4">
+    <section id="contact" className="bg-black pb-[10px] p-4">
       <div className="p-[20px] pt-[40px]">
-        <div className="text-[80px] text-white font-bold uppercase underline-hover1">Wanna start a</div>
-        <div className="text-[80px] text-white font-bold uppercase ml-[450px] underline-hover1">New project ? </div>
+        <div className="text-[80px] text-white font-bold uppercase underline-hover1">
+          Wanna start a
+        </div>
+        <div className="text-[80px] text-white font-bold uppercase ml-[450px] underline-hover1">
+          New project ?{" "}
+        </div>
       </div>
       <div className="grid grid-cols-3 gap-10 pt-10">
-        <div></div>
+        <div className="p-4">
+        <div className="text-gray-400 text-2xl">Location</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15651.750987834263!2d78.50454934499325!3d11.265986566972005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babafa93669852b%3A0xa055b283fa41c397!2sUppiliapuram%2C%20Tamil%20Nadu%20621011!5e0!3m2!1sen!2sin!4v1696410135927!5m2!1sen!2sin"
+            width="300"
+            height="300"
+            title="unique"
+            className="m-5 hover:scale-110 transition duration-500"
+          ></iframe>
+        </div>
         <div className="p-4">
           <div className="text-gray-400 text-2xl">Contacts</div>
           {data?.map((o, index) => (
@@ -137,10 +150,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="p-4 flex justify-between text-white items-center mt-10 border-t-2 border-gray-400">
-        <div>@2024 India</div>
-        <div>Developed by : Pradhive</div>
+        <div className="underline-hover1">@2024 India</div>
+        <div className="underline-hover1">Developed by : Pradhive</div>
         <div></div>
       </div>
-    </div>
+    </section>
   );
 }
