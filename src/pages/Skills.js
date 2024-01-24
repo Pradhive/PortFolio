@@ -3,6 +3,7 @@ import "./Skills.css";
 import { Progress } from "antd";
 import MongoDb from "./../assets/MongoDB.jpg";
 import VSCode from "./../assets/Vscode.jpg";
+import StarRating from "./Starrating";
 
 export default function Skills() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,39 +64,7 @@ export default function Skills() {
       percent: 50,
     },
   ];
-  const data1 = [
-    {
-      img: "https://cdn3d.iconscout.com/3d/free/thumb/free-git-9294878-7578021.png?f=webp",
-      label: "Git",
-      percent: 75,
-    },
-    {
-      img: "https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-9294852-7577995.png?f=webp",
-      label: "Tailwind CSS",
-      percent: 65,
-    },
-    {
-      img: VSCode,
-      label: "VS Code",
-      percent: 75,
-    },
-    {
-      img: "https://cdn3d.iconscout.com/3d/free/thumb/free-windows-5562368-4642713.png?f=webp",
-      label: "Windows",
-      percent: 85,
-    },
-    {
-      img: "https://cdn3d.iconscout.com/3d/free/thumb/free-linux-5645900-4695758.png?f=webp",
-      label: "Linux",
-      percent: 85,
-    },
-    {
-      img: "https://static-00.iconduck.com/assets.00/postman-icon-1024x1014-w6mbi9fr.png",
-      label: "Postman",
-      percent: 85,
-    },
-  ];
-
+  
   return (
     <section id="skill" className="p-4" ref={skillRef}>
       <div
@@ -119,16 +88,11 @@ export default function Skills() {
                       <div class="flip-card-front flex items-center justify-center">
                         <img src={o?.img} className="h-full" alt="Avatar" />
                       </div>
-                      <div class="flip-card-back flex flex-col items-center justify-center">
+                      <div class="flip-card-back flex flex-col items-center justify-center rounded-[40px]">
                         <h1 className="font-bold text1 p-4 text-[24px]">
                           {o?.label}
                         </h1>
-                        <Progress
-                          type="dashboard"
-                          percent={o?.percent}
-                          strokeColor="black"
-                          gapDegree={90}
-                        />
+                        <StarRating rating={o?.percent} />
                       </div>
                     </div>
                   </div>
@@ -136,33 +100,6 @@ export default function Skills() {
               ))}
             </div>
           </div>
-        </div>
-        <div className="text-[20px] md:text-[30px] p-4 text-center font-semibold">
-          Tools I'm using
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
-          {data1?.map((o, i) => (
-            <div className=" flex items-center justify-center ">
-              <div class="flip-card" key={i}>
-                <div class="flip-card-inner">
-                  <div class="flip-card-front flex items-center justify-center">
-                    <img src={o?.img} className="h-full" alt="Avatar" />
-                  </div>
-                  <div class="flip-card-back flex flex-col items-center justify-center">
-                    <h1 className="font-bold text1 p-4 text-[24px]">
-                      {o?.label}
-                    </h1>
-                    <Progress
-                      type="dashboard"
-                      percent={o?.percent}
-                      strokeColor="black"
-                      gapDegree={90}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
